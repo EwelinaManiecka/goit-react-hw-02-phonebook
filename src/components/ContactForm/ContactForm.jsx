@@ -2,11 +2,6 @@ import { Component } from 'react';
 import css from './ContactForm.module.css';
 
 class ContactForm extends Component {
-  state = {
-    name: '',
-    number: '',
-  };
-
   formChange = event => {
     this.setState({ [event.currentTarget.name]: event.currentTarget.value });
   };
